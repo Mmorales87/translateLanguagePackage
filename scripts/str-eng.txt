@@ -1,0 +1,197 @@
+<?php
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
+defined('MOODLE_INTERNAL') || die();
+
+$string['choosereadme'] = 'Theme Fresk is a child theme of Boost.';
+$string['pluginname'] = 'Fresk';
+$string['configtitle'] = 'Fresk';
+$string['cachedef_materialiconmapping'] = 'Mapping of icons for Material Icons';
+$string['poweredby3ipunt'] = 'Developed by <a href="https://tresipunt.com" target="_blank">3&Punt</a>';
+$string['generalsettings'] = 'General settings';
+$string['advancedsettings'] = 'Advanced settings';
+$string['brandcolor'] = 'Brand color';
+$string['brandcolor_desc'] = 'Accent color';
+$string['secondbrandcolor'] = 'Secondary color';
+$string['secondbrandcolor_desc'] = 'Secondary brand color.';
+$string['backgroundcolor'] = 'Background color';
+$string['backgroundcolor_desc'] = 'Platform background color';
+$string['loginbackground'] = 'Background image for login';
+$string['rawscss'] = 'Raw SCSS';
+$string['rawscss_desc'] = 'Use this field to provide SCSS or CSS code which will be injected at the end of the style sheet.';
+$string['rawscsspre'] = 'Raw initial SCSS';
+$string['rawscsspre_desc'] = 'In this field you can provide initializing SCSS code, it will be injected before everything else. Most of the time, you will use this setting to define variables.';
+$string['region-side-pre'] = 'Right';
+$string['sliders'] = 'Sliders';
+$string['activeslider_principal'] = 'Activate Slider on Home Page';
+$string['activeslider_principal_desc'] = 'If activated, the slider will appear on the Home Page.';
+$string['activeslider_dashboard'] = 'Activate Slider and Dashboard';
+$string['activeslider_dashboard_desc'] = 'If activated, the slider will appear on the users\'dashboard.';
+$string['sliderimages_principal'] = 'Images for slider';
+$string['sliderimages_principal_desc'] = 'You can upload up to 30 images in .jpg or .png format. If there is only one image, the slider controls will not be displayed.';
+$string['sliderimages_dashboard'] = 'Images for slider';
+$string['sliderimages_dashboard_desc'] = 'You can upload up to 30 images in .jpg or .png format. If there is only one image, the slider controls will not be displayed.';
+$string['contact'] = 'Contact';
+$string['contact_email'] = 'Contact email';
+$string['contact_email_desc'] = 'This email will be used to display as an email address for the user to contact an administrator of the platform.';
+$string['backgroundmenucolor'] = 'Top menu background color';
+$string['backgroundmenucolor_desc'] = 'Background color of the top navigation bar. This color must contrast with the color of the letters of the top menu, and with the colors of the logo itself.';
+$string['lettermenucolor'] = 'Top menu lettering color';
+$string['lettermenucolor_desc'] = 'Color in which texts will be displayed in the top navigation bar, to contrast with the primary color.';
+$string['iconfillermenucolor'] = 'Fill color of top menu icons';
+$string['iconfillermenucolor_desc'] = 'Color in which the icon fills in the top navigation bar will be displayed.';
+$string['iconmenucolor'] = 'Color of top menu icons';
+$string['iconmenucolor_desc'] = 'Color in which the icons will be displayed in the top navigation bar.';
+$string['iconfillermenucolorhover'] = 'Fill color of top menu icons (hover)';
+$string['iconfillermenucolorhover_desc'] = 'Color in which icon fills in the top navigation bar will be displayed when hovering the mouse over them.';
+$string['iconmenucolorhover'] = 'Color of top menu icons (hover)';
+$string['iconmenucolorhover_desc'] = 'Color in which the icons in the top navigation bar will be displayed when hovering the mouse over them.';
+$string['iconfillermenucoloractive'] = 'Top menu icons fill color (active)';
+$string['iconfillermenucoloractive_desc'] = 'Color in which the fill of the icons in the top navigation bar will be displayed when they are selected.';
+$string['iconmenucoloractive'] = 'Color of top menu icons (active)';
+$string['iconmenucoloractive_desc'] = 'Color in which icons will be displayed in the top navigation bar when they are selected.';
+$string['hidehomepage'] = 'Hide link to Home Page';
+$string['hidehomepage_desc'] = 'If enabled, the link to the Home Page will not appear in the top navigation menu.';
+$string['hideuserpreferences'] = 'Hide link to user preferences';
+$string['hideuserpreferences_desc'] = 'If enabled, the user preferences link will not appear in the user dropdown menu (except to admins and managers).';
+$string['limitedwidth'] = 'Limiting the width of content';
+$string['limitedwidth_desc'] = 'If enabled, the contents will appear with a maximum width of 830px. If deactivated, the contents will use 100% of the screen.';
+$string['hidenormalacces'] = 'Hide normal access to the platform';
+$string['hidenormalacces_desc'] = 'It will completely hide login and password access to the platform, and access will only be possible by alternative methods (OAuth2, SAML2, etc.).<br><b>If you hide this access, the administrator must have another way to access.</b>';
+$string['dropdownormalacces'] = 'Show access to the platform in a drop-down menu';
+$string['dropdownormalacces_desc'] = 'The user and password access to the platform will appear in a drop-down button, giving more importance to the rest of the access to the platform.';
+$string['cardslightbox'] = 'Lightbox card images';
+$string['cardslightbox_desc'] = 'If activated, the course covers can be enlarged by clicking on them.';
+$string['coursestartdate'] = 'Start date: {$a}';
+$string['progress'] = 'Progress';
+$string['cannotchangefavourite'] = 'Error saving course status';
+$string['cannotchangefavouritemsg'] = 'Could not save the course favorite status, please try again later.';
+$string['see_favorites'] = 'View only favorite spaces';
+$string['see_all'] = 'View all spaces';
+$string['xungraded'] = '{$a} unqualified';
+$string['xofysubmitted'] = '{$a->completed} of {$a->participants} delivered';
+$string['released'] = 'Published: {$a}';
+$string['calification'] = 'Qualification';
+$string['forummessages'] = 'Forum messages';
+$string['feedback'] = 'Feedback';
+$string['coursesactivity'] = 'Activity';
+$string['fontsandicons'] = 'Icons and fonts';
+$string['fonts'] = 'Fonts';
+$string['googlefonts_desc'] = 'If enabled, you will be able to choose from the fonts available in Google Fonts.';
+$string['googleapikey'] = 'Api Key de Google';
+$string['googleapikey_desc'] = 'In order to be able to choose between Google Fonts and Google Icons, a valid API Key is required. <a href="https://support.google.com/googleapi/answer/6158862" target="_blank">How to generate an API Key?</a>';
+$string['apikeynotvalid'] = 'The Google API Key entered is invalid';
+$string['apikeyvalid'] = 'The Google API Key entered is valid';
+$string['materialicons'] = 'Use material icons';
+$string['materialicons_desc'] = 'If enabled, the default Moodle icons will be replaced by <a href="https://mui.com/material-ui/material-icons/" target="_blank">Material Icons</a> (only the icons displayed typographically).';
+$string['areyounew'] = 'Are you new?';
+$string['areyounew_desc'] = 'If you don\'t have an account, you can create one';
+$string['welcome'] = 'Welcome!';
+$string['welcome_desc'] = 'Login with your username and password, or other services';
+$string['none'] = 'None';
+$string['courseindex'] = 'Course contents';
+$string['blocksofinterest'] = 'Blocks of interest';
+$string['noticesincourse'] = 'news';
+$string['teachersincourse'] = 'Teachers in the course';
+$string['timeplandesc'] = 'The course is planned in';
+$string['timeplanned'] = 'Planned time';
+$string['timeplanned_help'] = 'The teacher will be able to plan the time dedicated to each resource or activity. The sum of all times will be considered as the planned time of the course.';
+$string['time_planned_enabled'] = 'Enable Planned Time';
+$string['time_planned_enabled_help'] = 'If enabled, scheduled time can be added to course activities and resources';
+$string['time_planned_format'] = 'Planned time format';
+$string['time_planned_format_help'] = 'Select the default time format of the platform that will appear in the scheduled time';
+$string['timeplanned_module_enabled'] = 'Enable Planned time in module';
+$string['timeplanned_module_enabled_help'] = 'If enabled, the module will have the scheduled time available';
+$string['timeplanned_estimated_time'] = 'Estimated time';
+$string['timeplanned_estimated_time_help'] = 'Necessary time the student needs to spend on this module';
+$string['header'] = 'Header';
+$string['header2'] = 'Active subheader';
+$string['header2_desc'] = 'If this settings is active, a second header will be display under the main one.';
+$string['footer'] = 'Footer';
+$string['footeractive'] = 'Display footer';
+$string['footeractive_desc'] = 'If this settings is active, a footer will be display at the bottom of the pages.';
+$string['footerfixed'] = 'Fixed footer';
+$string['footerfixed_desc'] = 'If it is active, the footer will remain fixed on the screen, if not, it will remain below all the content';
+$string['header2height'] = 'Height';
+$string['header2height_desc'] = 'Describe in px second header height. Example: 50px';
+$string['header2bg'] = 'CSS Background';
+$string['header2bg_desc'] = 'Add background color.';
+$string['header2image'] = 'Image';
+$string['header2image_desc'] = 'This image will be placed on the left of the second header.';
+$string['header2title'] = 'Title';
+$string['header2title_desc'] = 'This text will be placed on the left of the second header. If there is an image, on its right.';
+$string['footercontent'] = 'Footer Content';
+$string['footercontent_desc'] = 'You can add the footer content';
+$string['footerimage'] = 'Footer Image';
+$string['footerimage_desc'] = 'If images are added in this field, a list with the names of the images and their public urls will be generated when saving, so that they can be used in footer content in a more convenient way.';
+$string['favicon'] = 'Favicon';
+$string['favicon_desc'] = 'Add a favicon';
+$string['navbar'] = 'Top navigation bar';
+$string['navbar_desc'] = 'Settings for the top navigation bar.';
+$string['imagesandsliders'] = 'Images and Sliders';
+$string['images_desc'] = 'You can also configure Moodle\'s own logos at <a href="{$a}">its own configuration</a>';
+$string['titles_typo'] = 'Typography for titles';
+$string['titles_typo_desc'] = 'You must upload a typography file valid for the web. The typography you upload here will be applied to all titles (h1, h2, etc. tags) on the platform.';
+$string['plataform_typo'] = 'Platform typography';
+$string['plataform_typo_desc'] = 'You must upload a typography file valid for the web. The typography you upload here will be applied to all texts on the platform, except titles.';
+$string['googlefonts'] = 'Use Google Fonts';
+$string['googlefonts_titles'] = 'Typography for titles';
+$string['googlefonts_titles_desc'] = 'The typography you choose will be applied to all titles (h1, h2, etc. tags) on the platform.';
+$string['googlefonts_platform'] = 'Platform typography';
+$string['googlefonts_platform_desc'] = 'The typography you choose will be applied to all texts on the platform, except for titles.';
+$string['courseformat'] = 'Course format';
+$string['showcourseimage'] = 'Show course image';
+$string['showcourseimage_desc'] = 'Show course image. Image size is important. Suggested: 1920x200';
+$string['showteachersimages'] = 'Show teachers images';
+$string['showteachersimages_desc'] = 'Show teachers images on course page.';
+$string['showprogressinfo'] = 'Show course progress information';
+$string['showprogressinfo_desc'] = 'Show course progress information for students.';
+$string['general_progress'] = 'General progress';
+$string['authheading'] = 'Authentication';
+$string['authheading_help'] = 'Configuration for Web Service authentication';
+$string['debug'] = 'Debug XML Data in logs';
+$string['debug_help'] = 'If enabled, the body of the XML Data message will be displayed in the logs.';
+$string['tipurl'] = 'Tresipunt License URL';
+$string['tipurl_help'] = 'URL provided by Tresipunt for license validation.';
+$string['tiptoken'] = 'Tresipunt Token';
+$string['tiptoken_help'] = 'Token provided by Trespunt for license validation.';
+$string['checklicense'] = 'Check Fresk license';
+$string['user'] = 'USER';
+$string['user_help'] = 'Username for Web Service';
+$string['password'] = 'PASSWORD';
+$string['password_help'] = 'Password for Web Service';
+$string['fresk:managetoken'] = 'Manage token for license';
+$string['teachers'] = 'Teacher/s';
+$string['self_enroll'] = 'Allow self-enrollment.l';
+$string['self_enroll_ok'] = 'Enrolled';
+$string['drawers'] = 'Side drawers';
+$string['drawers_desc'] = 'Settings for the side drawers.';
+$string['backgrounddrawerscolor'] = 'Background color of the side drawers';
+$string['backgrounddrawerscolor_desc'] = 'Background color of the side drawers. This color should contrast with the color of the letters on the side drawers.';
+$string['letterdrawerscolor'] = 'Side drawers text color';
+$string['letterdrawerscolor_desc'] = 'Color in which texts will be displayed in the side drawers to contrast with the primary color.';
+$string['iconfillerdrawerscolor'] = 'Fill color of side drawers icons';
+$string['iconfillerdrawerscolor_desc'] = 'Color in which the icon fills in the side drawers will be displayed.';
+$string['icondrawerscolor'] = 'Color of drawers icons';
+$string['icondrawerscolor_desc'] = 'Color in which the icons will be displayed in the side drawers.';
+$string['iconfillerdrawerscolorhover'] = 'Fill color of top drawers icons (hover)';
+$string['iconfillerdrawerscolorhover_desc'] = 'Color in which icon fills in the side drawers will be displayed when hovering the mouse over them.';
+$string['icondrawerscolorhover'] = 'Color of drawers icons (hover)';
+$string['icondrawerscolorhover_desc'] = 'Color in which the icons in the side drawers will be displayed when hovering the mouse over them.';
+$string['otheracces'] = 'Internal access';
+$string['decorative_figures'] = 'Decorative figures on the login screen.';
+$string['decorative_figures_desc'] = 'Decorative figures will appear on the top and left side of the Login screen. These figures will not appear in small resolutions.';
+
