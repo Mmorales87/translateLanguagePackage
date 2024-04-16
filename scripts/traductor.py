@@ -73,8 +73,8 @@ def file_translate(input_file, output_file, final_language):
 
 
 if __name__ == "__main__":
-    input_txt = os.path.join(os.path.dirname(__file__), "workplace-esp.txt")
-    output_txt = "workplace-cat.txt"
+    input_txt = os.path.join(os.path.dirname(__file__), "str-eng.txt")
+    output_txt = "str-cat.txt"
 
     # Idioma al que se quiere traducir
     target_language = CATALAN
