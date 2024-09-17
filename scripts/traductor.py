@@ -1,7 +1,7 @@
 import re
 import os
 import requests
-from deep_translator import GoogleTranslator  # Usaremos esta librería para traducción en lugar de googletrans
+from deep_translator import GoogleTranslator 
 
 SPANISH = "es"
 ENGLISH = "en"
@@ -30,7 +30,7 @@ def translate_to_catalan(text):
         response = requests.get(
             "https://www.softcatala.org/api/traductor/translate",
             params={
-                "langpair": f"spa|cat",  # Establece el par de idiomas de español a catalán
+                "langpair": f"spa|cat",
                 "q": text.strip(),
             }
         )
@@ -44,7 +44,6 @@ def translate_to_catalan(text):
 
 
 def file_translate(input_file, output_file, final_language):
-    # Utilizamos GoogleTranslator de la librería deep_translator
     translator = GoogleTranslator(source='auto', target=final_language)
 
     with open(input_file, 'r', encoding='utf-8') as file:
@@ -60,7 +59,6 @@ def file_translate(input_file, output_file, final_language):
             if final_language.lower() == CATALAN:
                 translated_text = translate_to_catalan(value)
             else:
-                # Usar deep_translator para traducir a otros idiomas
                 translated_text = translator.translate(value.strip())
 
             translate = f"{prefix}{translated_text}';\n"
