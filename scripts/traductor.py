@@ -1,7 +1,7 @@
 import re
 import os
 import requests
-from googletrans import Translator
+from deep_translator import GoogleTranslator  # Usaremos esta librería para traducción en lugar de googletrans
 
 SPANISH = "es"
 ENGLISH = "en"
@@ -44,7 +44,8 @@ def translate_to_catalan(text):
 
 
 def file_translate(input_file, output_file, final_language):
-    translator = Translator()
+    # Utilizamos GoogleTranslator de la librería deep_translator
+    translator = GoogleTranslator(source='auto', target=final_language)
 
     with open(input_file, 'r', encoding='utf-8') as file:
         lines = file.readlines()
@@ -59,8 +60,8 @@ def file_translate(input_file, output_file, final_language):
             if final_language.lower() == CATALAN:
                 translated_text = translate_to_catalan(value)
             else:
-                # Utilizar googletrans para traducir a otros idiomas
-                translated_text = translator.translate(value.strip(), dest=final_language).text
+                # Usar deep_translator para traducir a otros idiomas
+                translated_text = translator.translate(value.strip())
 
             translate = f"{prefix}{translated_text}';\n"
             translations.append(translate)
@@ -73,7 +74,7 @@ def file_translate(input_file, output_file, final_language):
 
 
 if __name__ == "__main__":
-    input_txt = os.path.join(os.path.dirname(__file__), "str-eng.txt")
+    input_txt = os.path.join(os.path.dirname(__file__), "str-esp.txt")
     output_txt = "str-cat.txt"
 
     # Idioma al que se quiere traducir
